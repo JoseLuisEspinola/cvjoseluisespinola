@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    background-color: antiquewhite;
+    color: #333;
+}
+  
+header {
+    text-align: center;
+    background-color: #3b3b3b;;
+    color: #fff;
+    padding: 20px;
+    max-width: 100%;
+}
+
+header h1 {
+    text-shadow: yellow 2px 2px;
+    font-size: 44px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px 12px 0 12px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #05bd86;
+    font-size: 18px;
+    margin: 14px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: darkgray;
+    color:aqua;
+}
+
+/* ******************** */  
+h1 {
+    margin: 0;
+}
+  
+h2 {
+    color: blue;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    
+}
+
+strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+.job {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+  
+.job h3 {
+    margin: 0;
+}
+
+/* ****** boton imprimir cv ****** */
+/* Estilo adicional para el botón imprimir */
+#imprimir {
+    text-align: center;
+}
+
+#imprimir button {
+    background-color: #35807E;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#imprimir button:hover {
+    color:#333;
+    background-color: #5CE1E6;
+
+}
+
+/* ******* Footer ****** */
+footer {
+    text-align: center;
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 10px 0;
+    max-width: 100%;
+}
+
+p.contac {
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3b3b3b;;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    text-shadow: #2fcdcd 2px 2px;
+}
+
+p.mimail {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+.social-links a {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2fcdcd;
+    background-color: #333;
+}
+
+/* ********** */
+.in-links {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.in-links li {
+    color: #ffffff;
+    padding: 5px 8px;
+    margin: 0;
+    justify-content: center;
+}
+
+.in-links a {
+    font-size: 1rem;
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.in-links a:hover {
+    color: #f56595;
+    background-color: #333;
+}
+
+p.copying {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-stretch:ultra-expanded;
+  color:rgb(153, 247, 141)
+}
+
+
+/* Estilos para el header y footer en pantalla grande */
+/* Media Queries para dispositivos móviles */
+@media only screen and (max-width: 978) {
+    ul.in-links li a {
+        color: #f56595;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para hacer el header responsive */
+    header {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* max-width: 25rem; */
+        /* text-align: center; lo anulae porque ya esta declarado antes */
+    }
+ 
+    header h1 {
+        text-align: center;
+        /* margin: 0;  lo anule porque esta antes declarado*/  
+    }
+
+    nav ul {
+        /* text-align: center; lo anulo porque no tiene ningun efecto*/
+        flex-direction: column; /* Restauramos la dirección del flex a columna para los ítems de navegación */
+        /* padding: 0; lo anulo porque esta declarado antes*/
+    }
+
+    nav a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: block; /* Cambiamos a display block para que los enlaces estén uno debajo del otro */
+        width: 100%; /* Ocupan todo el ancho disponible */
+    }
+    
+    /* **** Contacto **** */
+    p.contac {
+        font-size: 1.5rem;
+    }
+
+    /* **** nombre mail **** */
+    p.mimail {
+        font-size: 1rem;
+    }
+
+    /* **** links rededes sociales **** */
+    .social-links li,
+    .in-links li {
+        padding: 5px 5px;
+    }
+
+    .social-links a,
+    .in-links a {
+        font-size: 1rem;
+    }
+
+    /* **** links personales del footer **** */
+    footer div.contenedor-links ul {
+        flex-direction: column;
+    }
+
+    /* **** Copying **** */
+    footer p.copying {
+        font-size: 0.8rem;
+        font-stretch: normal;
+    }
+}
